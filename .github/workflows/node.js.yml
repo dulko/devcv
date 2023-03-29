@@ -40,5 +40,5 @@ jobs:
       with:
         folder: build
         repository-name: dulko/cv
-        target-folder: .
+        branch: main
 
