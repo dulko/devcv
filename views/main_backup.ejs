@@ -1,0 +1,36 @@
+<%- include("header") -%>
+
+<div class="container">
+  <h1>Natalia Dulko</h1>
+</div>
+<div class="container">
+  <h2>About me</h2>
+  <p>I'm an engineer with over 10 years of customer support experience. I like to automate processes and help customers using my development skills.</p>
+</div>
+
+<div class="container top">
+  <div class="container left">
+    <div class="container">
+    <div class="entry-row">
+      <h2>Professional Experience</h2>
+    </div>
+
+
+    <% experience.forEach(function(record) { %>
+      <div class="entry-row">
+      <h3><%= record.company %></h3>
+      <% record.roles.forEach(function(role) { %>
+        <h4><%= role.position %></h4>
+        <ul>
+          <% role.responsibilities.forEach(function(task) { %>
+            <li><%= task %></li>
+          <%  }) %>
+        </ul>
+        <%  }) %>
+      </div>
+    <%  }) %>
+    </div>
+    </div>
+  </div>
+
+<%- include("footer") -%>
