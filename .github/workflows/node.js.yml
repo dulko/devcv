@@ -38,6 +38,6 @@ jobs:
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        repository-name: ndulko/cv
-        folder: .
+        repository-name: dulko/cv
+        target-folder: .
 
