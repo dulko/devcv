@@ -36,7 +36,6 @@ jobs:
     - name: Install and Build
       run: |
         npm install
-        npm run build --if-present
         npm run deploy
     
     - name: Deploy 🚀
