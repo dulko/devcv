@@ -25,6 +25,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     
+    - name: Generate deployment folder
+      run: |
+        mkdir build 
+        mv README.md build/README.md
+    
     - name: Use Node.js 16.x
       uses: actions/setup-node@v3
       with:
